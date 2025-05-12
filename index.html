@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Accessible Simple</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: #111111;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 1rem;
+    }
+
+    nav {
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    nav a:focus,
+    nav a:hover {
+      outline: 2px solid yellow;
+    }
+
+    main {
+      padding: 1rem;
+    }
+
+    footer {
+      background-color: #f2f2f2;
+      padding: 1rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header role="banner">
+    <h1>Bienvenue sur notre site accessible</h1>
+    <nav role="navigation" aria-label="Menu principal">
+      <a href="#accueil">Accueil</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="accueil" role="main">
+    <section>
+      <h2>Accueil</h2>
+      <p>Bienvenue sur notre site. Nous nous engageons pour l'accessibilité numérique.</p>
+    </section>
+
+    <section id="services">
+      <h2>Nos services</h2>
+      <p>Découvrez les services que nous proposons pour tous les utilisateurs.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contactez-nous</h2>
+      <p>Vous pouvez nous joindre à l'adresse : <a href="mailto:contact@example.com">contact@example.com</a></p>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 Mon Site Accessible</p>
+  </footer>
+</body>
+</html>
